@@ -1,4 +1,6 @@
 <?php 
+include_once __DIR__ . "/classes/Product.php";
+
 class PetFood extends Product {
     protected $brand;
     protected $forWhichAnimal;
@@ -10,13 +12,14 @@ class PetFood extends Product {
      * Construct for PetFood
      *
      * @param  mixed $brand Name of the brand
-     * @param  mixed $forWhichAnimal For wich animal in the food
+     * @param  mixed $forWhichAnimal For wich animal is the food
      * @param  mixed $composition Ingredient in it
      * @param  mixed $container Container of food 
      * @param  mixed $expiryDate Expiry date of food
      * @return void
      */
     function __construct($brand, $forWhichAnimal, $composition, $container, $expiryDate) {
+        parent::__construct($name, $price, $description);
         $this->brand = $brand;
         $this->forWhichAnimal = $forWhichAnimal;
         $this->composition = $composition;

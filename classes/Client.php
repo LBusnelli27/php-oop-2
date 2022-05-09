@@ -1,6 +1,4 @@
 <?php 
-include_once __DIR__ . "/classes/PaymentMethod.php";
-
 class Client {
     protected $firstName;
     protected $lastName;
@@ -19,7 +17,6 @@ class Client {
      * @return void
      */
     function __construct($firstName, $lastName, $city, $address, $isRegistered) {
-        parent::__construct($paymentType, $fullName, $number, $expiryDate, $cvv);
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->city = $city;
