@@ -17,7 +17,9 @@ class Client {
      * @param  mixed $lastName Client last name
      * @param  mixed $city Client city
      * @param  mixed $address Client address
+     * @param  mixed $creditCard Client credit card
      * @param  mixed $isRegistered Boolean if the client id registered
+     * @param  mixed $discount Boolean if the client have a discount
      * @return void
      */
     function __construct($firstName, $lastName, $city, $address, $creditCard, $isRegistered, $discount) {
