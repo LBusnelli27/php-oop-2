@@ -7,7 +7,7 @@ class PaymentMethod {
     protected $cvv;
     
     /**
-     * __construct
+     * Construct for PaymentMethod
      *
      * @param  mixed $paymentType Type of payment
      * @param  mixed $fullName Full name on the card

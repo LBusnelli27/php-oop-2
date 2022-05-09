@@ -1,10 +1,8 @@
 <?php 
-
-class PetFood {
+class PetFood extends Product {
     protected $brand;
     protected $forWhichAnimal;
     protected $composition;
-    protected $price;
     protected $container;
     protected $expiryDate;
     
@@ -14,16 +12,14 @@ class PetFood {
      * @param  mixed $brand Name of the brand
      * @param  mixed $forWhichAnimal For wich animal in the food
      * @param  mixed $composition Ingredient in it
-     * @param  mixed $price Price
      * @param  mixed $container Container of food 
      * @param  mixed $expiryDate Expiry date of food
      * @return void
      */
-    function __construct($brand, $forWhichAnimal, $composition, $price, $container, $expiryDate) {
+    function __construct($brand, $forWhichAnimal, $composition, $container, $expiryDate) {
         $this->brand = $brand;
         $this->forWhichAnimal = $forWhichAnimal;
         $this->composition = $composition;
-        $this->price = $price;
         $this->container = $container;
         $this->expiryDate = $expiryDate;
     }
@@ -84,25 +80,6 @@ class PetFood {
     public function setComposition($composition)
     {
         $this->composition = $composition;
-        return $this;
-    }
-
-    /**
-     * Get the value of price
-     */ 
-    public function getPrice()
-    {
-        return $this->price;
-    }
-
-    /**
-     * Set the value of price
-     *
-     * @return  self
-     */ 
-    public function setPrice($price)
-    {
-        $this->price = $price;
         return $this;
     }
 
