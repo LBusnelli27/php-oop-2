@@ -1,5 +1,7 @@
 <?php 
-class PaymentMethod {
+include_once __DIR__ . "/classes/Client.php";
+
+class PaymentMethod extends Client {
     protected $fullName;
     protected $number;
     protected $expiryDate;
@@ -15,6 +17,7 @@ class PaymentMethod {
      * @return void
      */
     function __construct($fullName, $number, $expiryDate, $cvv) {
+        parent::__construct($firstName, $lastName, $city, $address, $isRegistered);
         $this->fullName = $fullName;
         $this->number = $number;
         $this->expiryDate = $expiryDate;
@@ -39,7 +42,6 @@ class PaymentMethod {
     public function setFullName($fullName)
     {
         $this->fullName = $fullName;
-        return $this;
     }
 
     /**
@@ -58,7 +60,6 @@ class PaymentMethod {
     public function setNumber($number)
     {
         $this->number = $number;
-        return $this;
     }
 
     /**
@@ -77,7 +78,6 @@ class PaymentMethod {
     public function setExpiryDate($expiryDate)
     {
         $this->expiryDate = $expiryDate;
-        return $this;
     }
 
     /**
@@ -96,7 +96,6 @@ class PaymentMethod {
     public function setCvv($cvv)
     {
         $this->cvv = $cvv;
-        return $this;
     }
 }
 ?>

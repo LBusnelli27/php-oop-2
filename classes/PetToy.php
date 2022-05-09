@@ -11,7 +11,7 @@ class PetToy extends Product {
      * @return void
      */
     function __construct($material) {
-        parent::__construct($name, $price, $description, $brand, $forWhichAnimal);
+        parent::__construct($brand, $name, $price, $description, $forWhichAnimal);
         $this->material = $material;
     }
 
@@ -32,7 +32,6 @@ class PetToy extends Product {
     public function setMaterial($material)
     {
         $this->material = $material;
-        return $this;
     }
 }
 ?>

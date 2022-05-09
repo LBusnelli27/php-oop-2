@@ -40,7 +40,6 @@ class Product {
     public function setBrand($brand)
     {
         $this->brand = $brand;
-        return $this;
     }
 
     /**
@@ -59,7 +58,6 @@ class Product {
     public function setName($name)
     {
         $this->name = $name;
-        return $this;
     }
 
     /**
@@ -78,7 +76,6 @@ class Product {
     public function setPrice($price)
     {
         $this->price = $price;
-        return $this;
     }
 
     /**
@@ -97,7 +94,6 @@ class Product {
     public function setDescription($description)
     {
         $this->description = $description;
-        return $this;
     }
 
     /**
@@ -116,7 +112,6 @@ class Product {
     public function setForWhichAnimal($forWhichAnimal)
     {
         $this->forWhichAnimal = $forWhichAnimal;
-        return $this;
     }
 }
 ?>

@@ -15,7 +15,7 @@ class PetFood extends Product {
      * @return void
      */
     function __construct($composition, $container, $expiryDate) {
-        parent::__construct($name, $price, $description, $brand, $forWhichAnimal);
+        parent::__construct($brand, $name, $price, $description, $forWhichAnimal);
         $this->composition = $composition;
         $this->container = $container;
         $this->expiryDate = $expiryDate;
@@ -38,7 +38,6 @@ class PetFood extends Product {
     public function setComposition($composition)
     {
         $this->composition = $composition;
-        return $this;
     }
 
     /**
@@ -57,7 +56,6 @@ class PetFood extends Product {
     public function setContainer($container)
     {
         $this->container = $container;
-        return $this;
     }
 
     /**
@@ -76,7 +74,6 @@ class PetFood extends Product {
     public function setExpiryDate($expiryDate)
     {
         $this->expiryDate = $expiryDate;
-        return $this;
     }
 }
 ?>
