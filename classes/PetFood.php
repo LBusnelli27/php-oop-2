@@ -1,5 +1,4 @@
 <?php 
-include_once __DIR__ . "/index.php";
 
 class PetFood {
     protected $brand;
@@ -21,7 +20,6 @@ class PetFood {
      * @return void
      */
     function __construct($brand, $forWhichAnimal, $composition, $price, $container, $expiryDate) {
-        parent::__construct($name, $city, $address, $siteUrl);
         $this->brand = $brand;
         $this->forWhichAnimal = $forWhichAnimal;
         $this->composition = $composition;

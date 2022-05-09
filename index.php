@@ -1,5 +1,6 @@
 <?php 
 include_once __DIR__ . "/classes/Client.php";
+include_once __DIR__ . "/classes/PetFood.php";
 
 class Shop {
     protected $name;
@@ -18,6 +19,7 @@ class Shop {
      */
     function __construct($name, $city, $address, $siteUrl) {
         parent::__construct($firstName, $forWhilastNamechAnimal, $city, $address);
+        parent::__construct($brand, $forWhichAnimal, $composition, $price, $container, $expiryDate);
         $this->name = $name;
         $this->city = $city;
         $this->address = $address;
