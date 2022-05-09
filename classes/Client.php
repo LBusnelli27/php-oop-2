@@ -25,7 +25,7 @@ class Client {
     }
 
     /**
-     * Get __construct
+     * Get construct for Client
      */ 
     public function getFirstName()
     {
@@ -33,7 +33,7 @@ class Client {
     }
 
     /**
-     * Set __construct
+     * Set construct for Client
      *
      * @return  self
      */ 
@@ -44,7 +44,7 @@ class Client {
     }
 
     /**
-     * Get __construct
+     * Get construct for Client
      */ 
     public function getLastName()
     {
@@ -52,7 +52,7 @@ class Client {
     }
 
     /**
-     * Set __construct
+     * Set construct for Client
      *
      * @return  self
      */ 
@@ -63,7 +63,7 @@ class Client {
     }
 
     /**
-     * Get __construct
+     * Get construct for Client
      */ 
     public function getCity()
     {
@@ -71,7 +71,7 @@ class Client {
     }
 
     /**
-     * Set __construct
+     * Set construct for Client
      *
      * @return  self
      */ 
@@ -82,7 +82,7 @@ class Client {
     }
 
     /**
-     * Get __construct
+     * Get construct for Client
      */ 
     public function getAddress()
     {
@@ -90,7 +90,7 @@ class Client {
     }
 
     /**
-     * Set __construct
+     * Set construct for Client
      *
      * @return  self
      */ 
@@ -101,7 +101,7 @@ class Client {
     }
 
     /**
-     * Get __construct
+     * Get construct for Client
      */ 
     public function getIsRegistered()
     {
@@ -109,7 +109,7 @@ class Client {
     }
 
     /**
-     * Set __construct
+     * Set construct for Client
      *
      * @return  self
      */ 

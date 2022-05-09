@@ -1,6 +1,5 @@
 <?php 
 class PaymentMethod {
-    protected $paymentType;
     protected $fullName;
     protected $number;
     protected $expiryDate;
@@ -9,42 +8,23 @@ class PaymentMethod {
     /**
      * Construct for PaymentMethod
      *
-     * @param  mixed $paymentType Type of payment
      * @param  mixed $fullName Full name on the card
      * @param  mixed $number Number of card
      * @param  mixed $expiryDate Expiry date of card
      * @param  mixed $cvv CVV of card
      * @return void
      */
-    function __construct($paymentType, $fullName, $number, $expiryDate, $cvv) {
-        $this->paymentType = $paymentType;
+    function __construct($fullName, $number, $expiryDate, $cvv) {
         $this->fullName = $fullName;
         $this->number = $number;
         $this->expiryDate = $expiryDate;
         $this->cvv = $cvv;
     }
 
-    /**
-     * Get __construct
-     */ 
-    public function getPaymentType()
-    {
-        return $this->paymentType;
-    }
+    
 
     /**
-     * Set __construct
-     *
-     * @return  self
-     */ 
-    public function setPaymentType($paymentType)
-    {
-        $this->paymentType = $paymentType;
-        return $this;
-    }
-
-    /**
-     * Get __construct
+     * Get construct for PaymentMethod
      */ 
     public function getFullName()
     {
@@ -52,7 +32,7 @@ class PaymentMethod {
     }
 
     /**
-     * Set __construct
+     * Set construct for PaymentMethod
      *
      * @return  self
      */ 
@@ -63,7 +43,7 @@ class PaymentMethod {
     }
 
     /**
-     * Get __construct
+     * Get construct for PaymentMethod
      */ 
     public function getNumber()
     {
@@ -71,7 +51,7 @@ class PaymentMethod {
     }
 
     /**
-     * Set __construct
+     * Set construct for PaymentMethod
      *
      * @return  self
      */ 
@@ -82,7 +62,7 @@ class PaymentMethod {
     }
 
     /**
-     * Get __construct
+     * Get construct for PaymentMethod
      */ 
     public function getExpiryDate()
     {
@@ -90,7 +70,7 @@ class PaymentMethod {
     }
 
     /**
-     * Set __construct
+     * Set construct for PaymentMethod
      *
      * @return  self
      */ 
@@ -101,7 +81,7 @@ class PaymentMethod {
     }
 
     /**
-     * Get __construct
+     * Get construct for PaymentMethod
      */ 
     public function getCvv()
     {
@@ -109,7 +89,7 @@ class PaymentMethod {
     }
 
     /**
-     * Set __construct
+     * Set construct for PaymentMethod
      *
      * @return  self
      */ 

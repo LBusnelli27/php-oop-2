@@ -4,9 +4,8 @@ include_once __DIR__ . "/classes/Product.php";
 class PetToy extends Product {
     protected $material;
     
-        
     /**
-     * __construct
+     * Construct for PetToy
      *
      * @param  mixed $material Material of which it is made
      * @return void
@@ -16,7 +15,6 @@ class PetToy extends Product {
         $this->material = $material;
     }
 
-    
 
     /**
      * Get the value of material
