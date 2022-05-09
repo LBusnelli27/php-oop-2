@@ -1,11 +1,11 @@
 <?php 
-include_once __DIR__ . "/classes/Client.php";
 
-class PaymentMethod extends Client {
+class PaymentMethod{
     protected $fullName;
     protected $number;
     protected $expiryDate;
     protected $cvv;
+    protected $balance;
     
     /**
      * Construct for PaymentMethod
@@ -16,12 +16,12 @@ class PaymentMethod extends Client {
      * @param  mixed $cvv CVV of card
      * @return void
      */
-    function __construct($fullName, $number, $expiryDate, $cvv) {
-        parent::__construct($firstName, $lastName, $city, $address, $isRegistered);
+    function __construct($fullName, $number, $expiryDate, $cvv,  $balance) {
         $this->fullName = $fullName;
         $this->number = $number;
         $this->expiryDate = $expiryDate;
         $this->cvv = $cvv;
+        $this->balance = $balance;
     }
 
     
@@ -37,7 +37,6 @@ class PaymentMethod extends Client {
     /**
      * Set construct for PaymentMethod
      *
-     * @return  self
      */ 
     public function setFullName($fullName)
     {
@@ -55,7 +54,6 @@ class PaymentMethod extends Client {
     /**
      * Set construct for PaymentMethod
      *
-     * @return  self
      */ 
     public function setNumber($number)
     {
@@ -73,7 +71,6 @@ class PaymentMethod extends Client {
     /**
      * Set construct for PaymentMethod
      *
-     * @return  self
      */ 
     public function setExpiryDate($expiryDate)
     {
@@ -91,11 +88,27 @@ class PaymentMethod extends Client {
     /**
      * Set construct for PaymentMethod
      *
-     * @return  self
      */ 
     public function setCvv($cvv)
     {
         $this->cvv = $cvv;
+    }
+
+    /**
+     * Get construct for PaymentMethod
+     */ 
+    public function getBalance()
+    {
+        return $this->credit_card->balance . '€';
+    }
+
+    /**
+     * Set construct for PaymentMethod
+     *
+     */ 
+    public function setBalance($balance)
+    {
+        $this->balance = $balance;
     }
 }
 ?>

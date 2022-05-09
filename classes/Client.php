@@ -1,4 +1,6 @@
 <?php 
+require_once __DIR__ . '/CreditCard.php';
+
 class Client {
     protected $firstName;
     protected $lastName;
